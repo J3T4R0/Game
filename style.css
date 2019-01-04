@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width: calc(304px / 12);
+	height: calc(101px / 4);
+	background: url(Game/loading-sprite.png);
+	animation: animate 0.2s steps(48) infinite;
+}
+
+@keyframes animate {
+
+		from {
+			background-position: 0;
+		}
+		to {
+			background-position: 304px;
+		}
+}
